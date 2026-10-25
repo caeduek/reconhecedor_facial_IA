@@ -1,0 +1,22 @@
+seed: 42
+image_size: 160
+embedding_dim: 512
+
+lfw_dataset:
+  min_faces_per_person: 15
+  max_identities: 25
+  unknown_identities_ratio: 0.20
+
+splits:
+  train_ratio: 0.60
+  val_ratio: 0.20
+  test_ratio: 0.20
+
+training:
+  epochs: 12
+  batch_size: 32
+  lr_partial: 0.0005
+  lr_full: 0.0001
+  triplet_margin: 0.3
+  cosine_margin: 0.35
+  cosine_scale: 16.0

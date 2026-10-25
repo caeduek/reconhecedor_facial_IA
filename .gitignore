@@ -1,0 +1,42 @@
+# Ambientes e cache Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# DADOS PRIVADOS E PÚBLICOS LOCAIS (LGPD - CRITÉRIO ELIMINATÓRIO)
+data/private/
+data/public/
+faces/
+consent/
+termos_consentimento/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.mp4
+*.avi
+
+# Exceção apenas para os gráficos agregados (sem rostos) dos experimentos
+!experiments/results/*.png
+!docs/**/*.png
+
+# EMBEDDINGS E BANCOS DE DADOS BIOMÉTRICOS
+embeddings/
+database/
+*.db
+*.sqlite
+*.sqlite3
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.safetensors
+checkpoints/
+logs/
+*.log
